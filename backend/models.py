@@ -4,6 +4,9 @@ from flask_sqlalchemy import SQLAlchemy
 import json
 from sqlalchemy.orm import relationship
 
+
+# database_filename = os.environ['DATABASE_FILE']
+
 database_filename = "casting.db"
 project_dir = os.path.dirname(os.path.abspath(__file__))
 database_path = "sqlite:///{}".format(os.path.join(project_dir, database_filename))
